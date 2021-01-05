@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/bottle-cap-collector-front/static/css/main.20c4a973.chunk.css",
+    "main.js": "/bottle-cap-collector-front/static/js/main.8bf6908d.chunk.js",
+    "main.js.map": "/bottle-cap-collector-front/static/js/main.8bf6908d.chunk.js.map",
+    "runtime-main.js": "/bottle-cap-collector-front/static/js/runtime-main.565a8f81.js",
+    "runtime-main.js.map": "/bottle-cap-collector-front/static/js/runtime-main.565a8f81.js.map",
+    "static/js/2.b4551fa8.chunk.js": "/bottle-cap-collector-front/static/js/2.b4551fa8.chunk.js",
+    "static/js/2.b4551fa8.chunk.js.map": "/bottle-cap-collector-front/static/js/2.b4551fa8.chunk.js.map",
+    "index.html": "/bottle-cap-collector-front/index.html",
+    "precache-manifest.e3a9eda8ddcabff92da0357e3e05246f.js": "/bottle-cap-collector-front/precache-manifest.e3a9eda8ddcabff92da0357e3e05246f.js",
+    "service-worker.js": "/bottle-cap-collector-front/service-worker.js",
+    "static/css/main.20c4a973.chunk.css.map": "/bottle-cap-collector-front/static/css/main.20c4a973.chunk.css.map",
+    "static/js/2.b4551fa8.chunk.js.LICENSE.txt": "/bottle-cap-collector-front/static/js/2.b4551fa8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.565a8f81.js",
+    "static/js/2.b4551fa8.chunk.js",
+    "static/css/main.20c4a973.chunk.css",
+    "static/js/main.8bf6908d.chunk.js"
+  ]
+}
