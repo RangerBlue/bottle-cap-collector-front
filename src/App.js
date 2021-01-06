@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react';
 import Cap from './components/cap';
+import Caps from './components/caps';
+import logo from './caplogo.png';
 
 class App extends Component {
   state = {
@@ -22,7 +24,7 @@ class App extends Component {
         let length = data.length;
         this.setState({ cap: data });
         let item;
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
           item = data[Math.floor(Math.random() * length)];
           this.addNewId(item.id);
         }
@@ -40,19 +42,36 @@ class App extends Component {
     return list;
   }
 
+  renderLogo = () => {
+    return (
+      <div class="loading">
+        <img src={logo} height={200} width={200} class="rotateLogo"></img>
+      </div>
+    );
+
+  }
+
 
   render() {
     if (this.state.loaded) {
       return [
         <center><h1>Bottle Cap Collector</h1></center>,
-        <div class="itemList">
-          {this.renderItems()}
+        <div class="container">
+          <div class="row">
+            {this.renderItems()}
+          </div>
+        </div>,
+        <center><h2>All caps:</h2></center>,
+        <div>
+          <Caps caps={this.state.cap.sort(({ id: previousID }, { id: currentID }) => previousID - currentID)} />
         </div>
       ];
+    } else {
+      return (
+        this.renderLogo()
+      )
     }
-    return (
-      <div>Loading...</div>
-    )
+
   }
 }
 

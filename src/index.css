@@ -18,11 +18,29 @@ code {
   justify-content: center;
 }
 
-.card {
-  background-color: #4f3a07;
+.allCaps {
+  display: flex;
+  justify-content: center;
 }
 
-.card-body {
-  background-color: #f0e7d1 ;
+.rotate:hover {
+  animation: rotation 8s infinite linear;
 }
 
+.rotateLogo {
+  animation: rotation 8s infinite linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0px 0px -100px;
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

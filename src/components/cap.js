@@ -13,12 +13,8 @@ class Cap extends React.Component {
 
   render() {
     return (
-      <div>
-        <div class="card">
-          <div class="card-body">
-            <img src={this.state.cap.fileLocation + "=w150"} height={200} width={200}></img>
-          </div>
-        </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <img src={this.state.cap.fileLocation + "=w190"} height={190} width={190} class="rotate"></img>
       </div>
     );
   };
