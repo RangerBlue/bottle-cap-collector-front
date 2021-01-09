@@ -1,8 +1,12 @@
 
 import React, { Component } from 'react';
 import Cap from './components/cap';
-import Caps from './components/caps';
 import logo from './caplogo.png';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import API from './pages/api.js'
+import Catalog from './pages/catalog.js'
+import Home from './pages/home.js'
+import Mobile from './pages/mobile.js'
 
 class App extends Component {
   state = {
@@ -34,6 +38,16 @@ class App extends Component {
       .catch(console.log)
   }
 
+  renderRandomCaps = () => {
+    return (
+      <div class="container">
+        <div class="row">
+          {this.renderItems()}
+        </div>
+      </div>
+    )
+  }
+
   renderItems = () => {
     let list = [];
     this.state.ids.forEach(id =>
@@ -48,23 +62,39 @@ class App extends Component {
         <img src={logo} height={200} width={200} class="rotateLogo"></img>
       </div>
     );
-
   }
 
+  renderMenu = () => {
+    return (
+      <nav class="navbar navbar-expand-xl justify-content-center">
+        <Link to='/' style={{ padding: 20 }}>
+          HOME
+      </Link>
+        <Link to='/mobile' style={{ padding: 20 }}>
+          MOBILE
+      </Link>
+        <Link to='/api' style={{ padding: 20 }}>
+          API
+      </Link>
+        <Link to='/catalog' style={{ padding: 20 }}>
+          CATALOG
+      </Link>
+      </nav>
+    );
+  }
 
   render() {
     if (this.state.loaded) {
       return [
-        <center><h1>Bottle Cap Collector</h1></center>,
-        <div class="container">
-          <div class="row">
-            {this.renderItems()}
-          </div>
-        </div>,
-        <center><h2>All caps:</h2></center>,
-        <div>
-          <Caps caps={this.state.cap.sort(({ id: previousID }, { id: currentID }) => previousID - currentID)} />
-        </div>
+        <Router>
+          <center><h1>Bottle Cap Collector</h1></center>,
+        {this.renderRandomCaps()}
+          {this.renderMenu()}
+          <Route path='/' exact component={Home} />
+          <Route path='/mobile' component={Mobile} />
+          <Route path='/api' component={API} />
+          <Route path='/catalog' component={() => <Catalog caps={this.state.cap} />} />
+        </Router>
       ];
     } else {
       return (

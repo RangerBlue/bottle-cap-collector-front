@@ -35,7 +35,6 @@ code {
   margin: -100px 0px 0px -100px;
 }
 
-
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -43,4 +42,18 @@ code {
   to {
     transform: rotate(359deg);
   }
+}
+
+.navbar a:hover {
+  background-color: #4f3a07;
+  color: white;
+}
+
+.navbar {
+  background-color: #f0e7d1;
+  color : black;
+}
+
+.navbar a{
+  color : black;
 }
