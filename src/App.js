@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Cap from './components/cap';
 import logo from './caplogo.png';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom"
 import API from './pages/api.js'
 import Catalog from './pages/catalog.js'
 import Home from './pages/home.js'
@@ -22,7 +22,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch('https://bottlecapcollector.herokuapp.com/links/')
+    fetch('https://bottlecapcollector.herokuapp.com/catalog/')
       .then(res => res.json())
       .then((data) => {
         let length = data.length;
@@ -66,19 +66,19 @@ class App extends Component {
 
   renderMenu = () => {
     return (
-      <nav class="navbar navbar-expand-xl justify-content-center">
-        <Link to='/' style={{ padding: 20 }}>
+      <nav class="navbar navbar-expand-xl justify-content-center" id="navBarMain">
+        <NavLink to='/' style={{ padding: 20 }} exact activeClassName="active">
           HOME
-      </Link>
-        <Link to='/mobile' style={{ padding: 20 }}>
+      </NavLink>
+        <NavLink to='/mobile' style={{ padding: 20 }} activeClassName="active">
           MOBILE
-      </Link>
-        <Link to='/api' style={{ padding: 20 }}>
+      </NavLink>
+        <NavLink to='/api' style={{ padding: 20 }} activeClassName="active">
           API
-      </Link>
-        <Link to='/catalog' style={{ padding: 20 }}>
+      </NavLink>
+        <NavLink to='/catalog' style={{ padding: 20 }} activeClassName="active">
           CATALOG
-      </Link>
+      </NavLink>
       </nav>
     );
   }

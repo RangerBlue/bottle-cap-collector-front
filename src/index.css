@@ -44,16 +44,43 @@ code {
   }
 }
 
-.navbar a:hover {
+#navBarMain a:hover {
   background-color: #4f3a07;
   color: white;
 }
 
-.navbar {
+#navBarMain .active {
+  background-color: #4f3a07;
+  color: white;
+}
+
+#navBarMain {
+  background-color: #f0e7d1;
+}
+
+#navBarMobile {
+  background-color: #4f3a07;
+  color: white;
+}
+
+#navBarMobile a:hover {
   background-color: #f0e7d1;
   color : black;
 }
 
-.navbar a{
+#navBarMobile .active {
+  background-color: #f0e7d1;
   color : black;
 }
+
+#navBarMobile a {
+  color : white;
+}
+
+#navBarMain a {
+  color : black;
+}
+
+
+
+
