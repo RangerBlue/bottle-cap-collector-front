@@ -87,7 +87,7 @@ class App extends Component {
     if (this.state.loaded) {
       return [
         <Router basename ="/bottle-cap-collector-front">
-          <center><h1>Bottle Cap Collector</h1></center>,
+          <center><h1 class="display-3"><strong>BOOTLE CAP COLLECTOR</strong></h1></center>
         {this.renderRandomCaps()}
           {this.renderMenu()}
           <Route path='/' exact component={Home} />
