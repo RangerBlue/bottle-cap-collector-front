@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9831cb4ca515988cc6af0edcf61da5d5",
+    "revision": "78b0fd0d91fe2254002a2f29c83a0398",
     "url": "/bottle-cap-collector-front/index.html"
   },
   {
-    "revision": "8ac6ee039470af8b2ffd",
-    "url": "/bottle-cap-collector-front/static/css/main.b41859cf.chunk.css"
+    "revision": "361ddfdfee99fb9044bf",
+    "url": "/bottle-cap-collector-front/static/css/main.92bd0316.chunk.css"
   },
   {
-    "revision": "2bab37e5af95f12bad55",
-    "url": "/bottle-cap-collector-front/static/js/2.589dc11a.chunk.js"
+    "revision": "5fb641c4c79aa761d3b4",
+    "url": "/bottle-cap-collector-front/static/js/2.ad212769.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/bottle-cap-collector-front/static/js/2.589dc11a.chunk.js.LICENSE.txt"
+    "url": "/bottle-cap-collector-front/static/js/2.ad212769.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ac6ee039470af8b2ffd",
-    "url": "/bottle-cap-collector-front/static/js/main.545f33e9.chunk.js"
+    "revision": "361ddfdfee99fb9044bf",
+    "url": "/bottle-cap-collector-front/static/js/main.864f1d18.chunk.js"
   },
   {
     "revision": "1afe6c5591e07eb3685c",
