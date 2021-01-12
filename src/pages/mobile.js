@@ -56,7 +56,7 @@ function Mobile() {
         </div>
 
     const githubLinkMobile = "https://github.com/RangerBlue/mBottleCapCollector"
-    const buttonText = "Android mobile application repository"
+    const desc = "Android mobile application repository"
 
     return (
         <div class="container">
@@ -88,7 +88,7 @@ function Mobile() {
                 <Route path='/mobile/internet' component={() => <VideoCard link={linkNoInternet} content={noInterentText} />} />
                 <Route path='/mobile/outofwork' component={() => <VideoCard link={linkOutOfWork} content={outOfWorkText} />} />
             </Router>
-            <FooterLink link={githubLinkMobile} buttonText={buttonText}></FooterLink>
+            <FooterLink link={githubLinkMobile} desc={desc}></FooterLink>
         </div>
     )
 }

@@ -92,8 +92,12 @@ code {
   color : white;
 }
 
-.display-3 {
+.display-4 {
   background-color: #f0e7d1;
+}
+
+#button-desc{
+  padding-left: 15px;
 }
 
 

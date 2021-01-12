@@ -3,7 +3,7 @@ import Caps from '../components/caps';
 
  const Catalog = ({caps}) => {
     return (
-        <div>
+        <div class="text-center">
           <Caps caps={caps.sort(({ id: previousID }, { id: currentID }) => previousID - currentID)} />
         </div>
     )
