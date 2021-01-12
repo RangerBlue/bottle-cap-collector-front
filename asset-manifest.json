@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/bottle-cap-collector-front/static/css/main.c7732ac2.chunk.css",
-    "main.js": "/bottle-cap-collector-front/static/js/main.a6e82b36.chunk.js",
-    "main.js.map": "/bottle-cap-collector-front/static/js/main.a6e82b36.chunk.js.map",
+    "main.css": "/bottle-cap-collector-front/static/css/main.b41859cf.chunk.css",
+    "main.js": "/bottle-cap-collector-front/static/js/main.8656d2e6.chunk.js",
+    "main.js.map": "/bottle-cap-collector-front/static/js/main.8656d2e6.chunk.js.map",
     "runtime-main.js": "/bottle-cap-collector-front/static/js/runtime-main.565a8f81.js",
     "runtime-main.js.map": "/bottle-cap-collector-front/static/js/runtime-main.565a8f81.js.map",
-    "static/js/2.2305884a.chunk.js": "/bottle-cap-collector-front/static/js/2.2305884a.chunk.js",
-    "static/js/2.2305884a.chunk.js.map": "/bottle-cap-collector-front/static/js/2.2305884a.chunk.js.map",
+    "static/js/2.589dc11a.chunk.js": "/bottle-cap-collector-front/static/js/2.589dc11a.chunk.js",
+    "static/js/2.589dc11a.chunk.js.map": "/bottle-cap-collector-front/static/js/2.589dc11a.chunk.js.map",
     "index.html": "/bottle-cap-collector-front/index.html",
-    "precache-manifest.1755ce3eb3a78e7d1caa8e6e819fc164.js": "/bottle-cap-collector-front/precache-manifest.1755ce3eb3a78e7d1caa8e6e819fc164.js",
+    "precache-manifest.e443aa15ebf0d203a5f5c423c081ab01.js": "/bottle-cap-collector-front/precache-manifest.e443aa15ebf0d203a5f5c423c081ab01.js",
     "service-worker.js": "/bottle-cap-collector-front/service-worker.js",
-    "static/css/main.c7732ac2.chunk.css.map": "/bottle-cap-collector-front/static/css/main.c7732ac2.chunk.css.map",
-    "static/js/2.2305884a.chunk.js.LICENSE.txt": "/bottle-cap-collector-front/static/js/2.2305884a.chunk.js.LICENSE.txt",
+    "static/css/main.b41859cf.chunk.css.map": "/bottle-cap-collector-front/static/css/main.b41859cf.chunk.css.map",
+    "static/js/2.589dc11a.chunk.js.LICENSE.txt": "/bottle-cap-collector-front/static/js/2.589dc11a.chunk.js.LICENSE.txt",
     "static/media/caplogo.png": "/bottle-cap-collector-front/static/media/caplogo.ce7306a3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.565a8f81.js",
-    "static/js/2.2305884a.chunk.js",
-    "static/css/main.c7732ac2.chunk.css",
-    "static/js/main.a6e82b36.chunk.js"
+    "static/js/2.589dc11a.chunk.js",
+    "static/css/main.b41859cf.chunk.css",
+    "static/js/main.8656d2e6.chunk.js"
   ]
 }
