@@ -81,6 +81,17 @@ code {
   color : black;
 }
 
+.mobile-footer {
+  background-color: #f0e7d1;
+  color : black;
+}
+
+#repository-button {
+  background-color:#4f3a07;
+  border-color:#4f3a07 ;
+  color : white;
+}
+
 
 
 
