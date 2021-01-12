@@ -42,7 +42,7 @@ function Mobile() {
 
     return (
         <div class="container">
-            <Router>
+            <Router basename ="/bottle-cap-collector-front">
                 <nav class="navbar navbar-expand-xl justify-content-center" id="navBarMobile">
                     <NavLink to='/mobile/check' style={{ padding: 20 }} exact activeClassName="active">
                         CHECK CAP
@@ -63,12 +63,12 @@ function Mobile() {
                         OUT OF WORK
                     </NavLink>
                 </nav>
-                <Route basename ="/bottle-cap-collector-front" path='/mobile/check' component={() => <VideoCard link={linkCheckCap} content={checkCapText} />} />
-                <Route basename ="/bottle-cap-collector-front" path='/mobile/whatcapyouare' component={() => <VideoCard link={linkWhatCapYouAre} content={whatCapYouAreText} />} />
-                <Route basename ="/bottle-cap-collector-front" path='/mobile/gallery' component={() => <VideoCard link={linkGallery} content={gallertText} />} />
-                <Route basename ="/bottle-cap-collector-front" path='/mobile/account' component={() => <VideoCard link={linkNoAdmin} content={noAdminText} />} />
-                <Route basename ="/bottle-cap-collector-front" path='/mobile/internet' component={() => <VideoCard link={linkNoInternet} content={noInterentText} />} />
-                <Route basename ="/bottle-cap-collector-front" path='/mobile/outofwork' component={() => <VideoCard link={linkOutOfWork} content={outOfWorkText} />} />
+                <Route path='/mobile/check' component={() => <VideoCard link={linkCheckCap} content={checkCapText} />} />
+                <Route path='/mobile/whatcapyouare' component={() => <VideoCard link={linkWhatCapYouAre} content={whatCapYouAreText} />} />
+                <Route path='/mobile/gallery' component={() => <VideoCard link={linkGallery} content={gallertText} />} />
+                <Route path='/mobile/account' component={() => <VideoCard link={linkNoAdmin} content={noAdminText} />} />
+                <Route path='/mobile/internet' component={() => <VideoCard link={linkNoInternet} content={noInterentText} />} />
+                <Route path='/mobile/outofwork' component={() => <VideoCard link={linkOutOfWork} content={outOfWorkText} />} />
             </Router>
             <div class="mobile-footer">
                 <div class="card-footer">

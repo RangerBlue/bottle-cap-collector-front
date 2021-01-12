@@ -86,14 +86,14 @@ class App extends Component {
   render() {
     if (this.state.loaded) {
       return [
-        <Router>
+        <Router basename ="/bottle-cap-collector-front">
           <center><h1>Bottle Cap Collector</h1></center>,
         {this.renderRandomCaps()}
           {this.renderMenu()}
-          <Route basename ="/bottle-cap-collector-front" path='/' exact component={Home} />
-          <Route basename ="/bottle-cap-collector-front" path='/mobile' component={Mobile} />
-          <Route basename ="/bottle-cap-collector-front" path='/api' component={API} />
-          <Route basename ="/bottle-cap-collector-front" path='/catalog' component={() => <Catalog caps={this.state.cap} />} />
+          <Route path='/' exact component={Home} />
+          <Route path='/mobile' component={Mobile} />
+          <Route path='/api' component={API} />
+          <Route path='/catalog' component={() => <Catalog caps={this.state.cap} />} />
         </Router>
       ];
     } else {
