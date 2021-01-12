@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa56c3d3b90725a68eb1303be09f8b4d",
+    "revision": "4b15b6c0963e8b15742c1a7ffd7cbfd3",
     "url": "/bottle-cap-collector-front/index.html"
   },
   {
