@@ -9,50 +9,55 @@ function Mobile() {
     const linkCheckCap = "https://drive.google.com/file/d/1Qjx5_mtIxrMq5Y9FkODfdR5vmpEhMaJT/preview";
     const checkCapText =
         <div>
-            Check cap functionality allows to validate whether bottle cap you've got is
-            already part of your collection or not. Put your cap into circle in camera preview and take picture,
-            if picture you have just taken is not fine capture picture once again. If picture is fine similarity
-            raport will be preseented. To validate if bottle cap is duplicate you must check by yourself is it
-            one of the nine most similar listed below. Table next to picture of your cap show similarity distribution.
-            For example if 74 items are in 6-7 section it means that 74 caps of collection has similarity match between
-            60%-70% with your cap. If you decide to save your cap you must type its name which is most likely beverage
-            brand and description which is additional informations.
+            <i>Check cap</i> functionality allows you to validate whether a bottle cap you have is already a part 
+            of your collection. Put your cap into a circle in the camera preview and take a picture. If the image 
+            is not fine, you can try again. When the picture is fine, proceed to see a similarity report. The report
+            shows you images of nine caps, which are the most similar to the one you photographed. The final decision
+            is yours. To clear your doubts, there is a similarity distribution table next to the picture of your cap. 
+            The number under each section represents the number of caps in the given similarity range (the green 9-10 
+            range means the highest similarity; the red 0-1 range is the lowest).For a duplicated bottle cap there 
+            should be at least 1 under the most green sections. If you decide to save your cap, you must type in its 
+            name (most likely the beverage brand) and a description with some additional information.
+
         </div>
 
     const linkGallery = "https://drive.google.com/file/d/1i48-yNF8bUzClNdhz6lawkHexyiYVW_n/preview";
     const gallertText =
         <div>
-            All caps sit under gallery. You can see all of them in descending or ascending order
-            by added date. To see bigger picture and more information about cap you are interested in click on it. If
-            you have permissions you can edit name and description or delete given cap.
+            You can always see your whole caps collection under the <i>Gallery</i>. Put your bottle caps in a descending 
+            or ascending order; sort them by the date they were added. Click on a chosen cap to see a bigger picture and 
+            more information. If you have proper permissions you can edit the name and the description or even delete the
+            given cap.
+
         </div>
 
     const linkNoAdmin = "https://drive.google.com/file/d/1piIamlfwRR1p4VLg4GU28SsKhgJIAhXi/preview";
     const noAdminText =
         <div>
-            As admin user you are allowed to perform updates, additions, deletions and views. If you are not logged in
-            you are restricted to view only functionalities. You are allowed to do everything but altering cap gallery.
+            As an admin user, you are allowed to perform updates, additions, deletions and views. Without the account, 
+            you are restricted to only view the functionalities – you cannot alter the bottle cap collection.
         </div>
 
     const linkNoInternet = "https://drive.google.com/file/d/1fHmVHqxU--L27tNloqkYv6Q7_no3ZSA9/preview";
     const noInterentText =
         <div>
-            If your device doesn't have internet access app won't run.
+            If your device does not have an Internet access, the application will not run.
         </div>
 
     const linkOutOfWork = "https://drive.google.com/file/d/1GvxRKI_BiMXXJu0oZFALBiOkL8f9F08H/preview";
     const outOfWorkText =
         <div>
-            Backend API is not available between 00:15 and 10:05 thus application won't run during this time period.
+            Backend API is not available between 00:15 and 10:05 thus application will not run during this time.
         </div>
 
     const linkWhatCapYouAre = "https://drive.google.com/file/d/1PPRMovZQICKTpza7sfzL66dLV4T6xo1a/preview";
     const whatCapYouAreText =
         <div>
-            What cap you are allows you to find out to which cap from collection you are most similiar. You need to use
-            front camera at put your face in preview circle and take picture. Take picture once again if you are not
-            happy with taken picture. After submitting picture you will receive cap from collection which is most similar
-            to you. You can share results throught way you prefer.
+            <i>What cap you are</i> is a fun functionality to figure out which bottle cap in your collection is the most
+            similar to your own face. You need to use the front camera. Put your face in the preview circle and take a shot.
+            If you are not happy with the picture, you can always try again. If the photo is fine, submit it. You will 
+            receive an image of a bottle cap that is the most similar to your photo. Share the results with friends via 
+            Messenger, Instagram or any usual way you like, or save it on your Google Drive.
         </div>
 
     const githubLinkMobile = "https://github.com/RangerBlue/mBottleCapCollector"
