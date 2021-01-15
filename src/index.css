@@ -35,6 +35,13 @@ code {
   margin: -100px 0px 0px -100px;
 }
 
+.textLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0px 0px -170px;
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);

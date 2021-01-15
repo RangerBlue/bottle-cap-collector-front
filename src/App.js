@@ -12,8 +12,10 @@ class App extends Component {
   state = {
     cap: [],
     ids: [],
-    loaded: false
+    loaded: false,
+    outsideWorkingHours : ""
   }
+  
 
   addNewId = (newID) => {
     this.setState(prevState => ({
@@ -22,7 +24,9 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch('https://bottlecapcollector.herokuapp.com/catalog/')
+    const now = new Date()
+    if(!((now.getHours>=0 && now.getMinutes >=15) && (now.getHours<7))){
+      fetch('https://bottlecapcollector.herokuapp.com/catalog/')
       .then(res => res.json())
       .then((data) => {
         let length = data.length;
@@ -36,6 +40,10 @@ class App extends Component {
         this.setState({ loaded: true })
       })
       .catch(console.log)
+    } 
+    else{
+      this.setState({outsideWorkingHours: <div>App is currently outside working hours, go back at 7.00</div>})  
+    }  
   }
 
   renderRandomCaps = () => {
@@ -56,10 +64,11 @@ class App extends Component {
     return list;
   }
 
-  renderLogo = () => {
+  renderLogo = (text) => {
     return (
       <div class="loading">
         <img src={logo} height={200} width={200} class="rotateLogo"></img>
+       <div class="textLogo">{text}</div>
       </div>
     );
   }
@@ -98,7 +107,10 @@ class App extends Component {
       ];
     } else {
       return (
-        this.renderLogo()
+        <div>
+          {this.renderLogo(this.state.outsideWorkingHours)}
+        </div>
+
       )
     }
 

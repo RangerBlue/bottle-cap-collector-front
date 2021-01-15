@@ -46,7 +46,7 @@ function Mobile() {
     const linkOutOfWork = "https://drive.google.com/file/d/1GvxRKI_BiMXXJu0oZFALBiOkL8f9F08H/preview";
     const outOfWorkText =
         <div>
-            Backend API is not available between 00:15 and 10:05 thus application will not run during this time.
+            Backend API is not available between 00:15 and 07:00 thus application will not run during this time.
         </div>
 
     const linkWhatCapYouAre = "https://drive.google.com/file/d/1PPRMovZQICKTpza7sfzL66dLV4T6xo1a/preview";
