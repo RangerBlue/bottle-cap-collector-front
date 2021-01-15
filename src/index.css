@@ -104,7 +104,7 @@ code {
   background-color:#4f3a07;
 }
 
-
-
-
-
+.list-group-item.active {
+  background-color:#4f3a07 !important;
+  border-color: #4f3a07 !important;
+}

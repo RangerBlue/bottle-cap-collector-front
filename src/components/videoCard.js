@@ -8,7 +8,7 @@ const VideoCard = (props) => {
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" class="float-left" src={props.link} ></iframe>
                     </div>
-                    <p class="card-text">{props.content}</p>
+                    <div class="card-text">{props.content}</div>
                 </div>
             </div>
         </div>

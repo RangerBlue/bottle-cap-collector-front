@@ -2,39 +2,38 @@ import React from "react"
 import VideoCard from "../components/videoCard"
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom"
 import FooterLink from "../components/footerLink";
-
-
+import { useState } from "react"
+import TextSection from "../components/textSection"
 
 function Mobile() {
+    const [showMainContent, setShowMainContent] = useState([])
     const linkCheckCap = "https://drive.google.com/file/d/1Qjx5_mtIxrMq5Y9FkODfdR5vmpEhMaJT/preview";
     const checkCapText =
         <div>
-            <i>Check cap</i> functionality allows you to validate whether a bottle cap you have is already a part 
-            of your collection. Put your cap into a circle in the camera preview and take a picture. If the image 
+            <i>Check cap</i> functionality allows you to validate whether a bottle cap you have is already a part
+            of your collection. Put your cap into a circle in the camera preview and take a picture. If the image
             is not fine, you can try again. When the picture is fine, proceed to see a similarity report. The report
             shows you images of nine caps, which are the most similar to the one you photographed. The final decision
-            is yours. To clear your doubts, there is a similarity distribution table next to the picture of your cap. 
-            The number under each section represents the number of caps in the given similarity range (the green 9-10 
-            range means the highest similarity; the red 0-1 range is the lowest).For a duplicated bottle cap there 
-            should be at least 1 under the most green sections. If you decide to save your cap, you must type in its 
+            is yours. To clear your doubts, there is a similarity distribution table next to the picture of your cap.
+            The number under each section represents the number of caps in the given similarity range (the green 9-10
+            range means the highest similarity; the red 0-1 range is the lowest). For a duplicated bottle cap there
+            should be at least 1 under the most green sections. If you decide to save your cap, you must type in its
             name (most likely the beverage brand) and a description with some additional information.
-
         </div>
 
     const linkGallery = "https://drive.google.com/file/d/1i48-yNF8bUzClNdhz6lawkHexyiYVW_n/preview";
     const gallertText =
         <div>
-            You can always see your whole caps collection under the <i>Gallery</i>. Put your bottle caps in a descending 
-            or ascending order; sort them by the date they were added. Click on a chosen cap to see a bigger picture and 
+            You can always see your whole caps collection under the <i>Gallery</i>. Put your bottle caps in a descending
+            or ascending order; sort them by the date they were added. Click on a chosen cap to see a bigger picture and
             more information. If you have proper permissions you can edit the name and the description or even delete the
             given cap.
-
         </div>
 
     const linkNoAdmin = "https://drive.google.com/file/d/1piIamlfwRR1p4VLg4GU28SsKhgJIAhXi/preview";
     const noAdminText =
         <div>
-            As an admin user, you are allowed to perform updates, additions, deletions and views. Without the account, 
+            As an admin user, you are allowed to perform updates, additions, deletions and views. Without the account,
             you are restricted to only view the functionalities – you cannot alter the bottle cap collection.
         </div>
 
@@ -55,18 +54,30 @@ function Mobile() {
         <div>
             <i>What cap you are</i> is a fun functionality to figure out which bottle cap in your collection is the most
             similar to your own face. You need to use the front camera. Put your face in the preview circle and take a shot.
-            If you are not happy with the picture, you can always try again. If the photo is fine, submit it. You will 
-            receive an image of a bottle cap that is the most similar to your photo. Share the results with friends via 
+            If you are not happy with the picture, you can always try again. If the photo is fine, submit it. You will
+            receive an image of a bottle cap that is the most similar to your photo. Share the results with friends via
             Messenger, Instagram or any usual way you like, or save it on your Google Drive.
         </div>
 
     const githubLinkMobile = "https://github.com/RangerBlue/mBottleCapCollector"
     const desc = "Android mobile application repository"
 
+    const mobileTittle = "Android";
+    const mobileDescprition =
+        <div>
+            Mobile application was built for Android System. It is communicating with backend via REST API. This app is
+            an entry point for maintaining content of the cap collection. User should use it to capture picture of bottle
+            caps. Target version of the project is 28. Two libraries were used during development:
+            <ul>
+                <li>Retrofit - HTTP client for Android,</li>
+                <li>Picasso - displaying images.</li>
+            </ul>
+        </div>
+
     return (
         <div class="container">
             <Router basename="/bottle-cap-collector-front">
-                <nav class="navbar navbar-expand-xl justify-content-center" id="navBarMobile">
+                <nav class="navbar navbar-expand-xl justify-content-center" id="navBarMobile" onClick={() => setShowMainContent(false)}>
                     <NavLink to='/mobile/check' style={{ padding: 20 }} exact activeClassName="active">
                         CHECK CAP
                     </NavLink>
@@ -93,6 +104,8 @@ function Mobile() {
                 <Route path='/mobile/internet' component={() => <VideoCard link={linkNoInternet} content={noInterentText} />} />
                 <Route path='/mobile/outofwork' component={() => <VideoCard link={linkOutOfWork} content={outOfWorkText} />} />
             </Router>
+            {showMainContent ? <TextSection text={mobileDescprition}
+                tittle={mobileTittle} /> : null}
             <FooterLink link={githubLinkMobile} desc={desc}></FooterLink>
         </div>
     )

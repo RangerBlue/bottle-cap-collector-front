@@ -1,7 +1,7 @@
 import React from "react"
 import TextSection from "../components/textSection"
 import FooterLink from "../components/footerLink";
-import diagram from '../diagram.png';
+import diagram from '../pictures/diagram.png';
 
 const Home = () => {
     const frontEndGithubLink = "https://github.com/RangerBlue/bottle-cap-collector-front"
@@ -13,8 +13,11 @@ const Home = () => {
             demonstration of Android mobile application. API section contains information about backend created in Spring Boot.
             Catalog presents all caps which I have collected so far, you can filter them out and click of the one you are
             interested in to see more details. In the footer you can find link to GitHub repository of given application.
+            The system was created to fulfill personal needs - maintain big collection of bootle caps and to be playground
+            for learning new technologies and obtaining certification.
         </div>
     const pageContentTittle = <div>BOTTLE CAP COLLECTOR PROJECT</div>
+
 
     return (
         <div class="container">

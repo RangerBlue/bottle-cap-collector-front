@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import Cap from './components/cap';
-import logo from './caplogo.png';
+import logo from './pictures/caplogo.png';
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom"
 import API from './pages/api.js'
 import Catalog from './pages/catalog.js'
@@ -87,7 +87,7 @@ class App extends Component {
     if (this.state.loaded) {
       return [
         <Router basename ="/bottle-cap-collector-front">
-          <center><h1 class="display-4"><strong>BOOTLE CAP COLLECTOR</strong></h1></center>
+          <center><h1 class="display-4"><strong>BOTTLE CAP COLLECTOR</strong></h1></center>
         {this.renderRandomCaps()}
           {this.renderMenu()}
           <Route path='/' exact component={Home} />

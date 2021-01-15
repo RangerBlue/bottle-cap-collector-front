@@ -6,7 +6,7 @@ const FooterLink = (props) => {
             <div class="card-footer">
                 <a href={props.link} role="button" class="btn btn-primary"
                     id="repository-button" target="_blank">GitHub</a>
-                <p class="d-inline-block" id="button-desc">{props.desc}</p>
+                <div class="d-inline-block" id="button-desc">{props.desc}</div>
             </div>
         </div>
     )
