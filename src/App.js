@@ -9,13 +9,28 @@ import Home from './pages/home.js'
 import Mobile from './pages/mobile.js'
 
 class App extends Component {
+  constructor() {
+    super()
+    window.addEventListener("resize", this.update);
+  }
+
   state = {
     cap: [],
     ids: [],
     loaded: false,
-    outsideWorkingHours : ""
+    outsideWorkingHours: "",
+    windowWidth: window.innerWidth
   }
-  
+
+  componentDidMount() {
+    this.update();
+  }
+
+  update = () => {
+    this.setState({
+      windowWidth: window.innerWidth
+    });
+  };
 
   addNewId = (newID) => {
     this.setState(prevState => ({
@@ -25,40 +40,60 @@ class App extends Component {
 
   componentDidMount() {
     const now = new Date()
-    if(!((now.getHours>=0 && now.getMinutes >=15) && (now.getHours<7))){
+    if (!((now.getHours >= 0 && now.getMinutes >= 15) && (now.getHours < 7))) {
       fetch('https://bottlecapcollector.herokuapp.com/catalog/')
-      .then(res => res.json())
-      .then((data) => {
-        let length = data.length;
-        this.setState({ cap: data });
-        let item;
-        for (let i = 0; i < 6; i++) {
-          item = data[Math.floor(Math.random() * length)];
-          this.addNewId(item.id);
-        }
+        .then(res => res.json())
+        .then((data) => {
+          let length = data.length;
+          this.setState({ cap: data });
+          let item;
+          for (let i = 0; i < 6; i++) {
+            item = data[Math.floor(Math.random() * length)];
+            this.addNewId(item.id);
+          }
 
-        this.setState({ loaded: true })
-      })
-      .catch(console.log)
-    } 
-    else{
-      this.setState({outsideWorkingHours: <div>App is currently outside working hours, go back at 7.00</div>})  
-    }  
+          this.setState({ loaded: true })
+        })
+        .catch(console.log)
+    }
+    else {
+      this.setState({ outsideWorkingHours: <div>App is currently outside working hours, go back at 7.00</div> })
+    }
   }
 
   renderRandomCaps = () => {
-    return (
-      <div class="container">
-        <div class="row">
-          {this.renderItems()}
+    if (this.state.windowWidth < 576) {
+      return (
+        <div class="container">
+          <div class="row">
+            {this.renderItems(1)}
+          </div>
         </div>
-      </div>
-    )
+      )
+    } else if (this.state.windowWidth > 576 && this.state.windowWidth < 768) {
+      return (
+        <div class="container">
+          <div class="row">
+            {this.renderItems(2)}
+          </div>
+        </div>
+      )
+    }
+    else {
+      return (
+        <div class="container">
+          <div class="row">
+            {this.renderItems(6)}
+          </div>
+        </div>
+      )
+    }
+
   }
 
-  renderItems = () => {
+  renderItems = (amount) => {
     let list = [];
-    this.state.ids.forEach(id =>
+    this.state.ids.slice(0, amount).forEach(id =>
       list.push(<Cap id={id} />)
     );
     return list;
@@ -68,7 +103,7 @@ class App extends Component {
     return (
       <div class="loading">
         <img src={logo} height={200} width={200} class="rotateLogo"></img>
-       <div class="textLogo">{text}</div>
+        <div class="textLogo">{text}</div>
       </div>
     );
   }
@@ -95,9 +130,9 @@ class App extends Component {
   render() {
     if (this.state.loaded) {
       return [
-        <Router basename ="/bottle-cap-collector-front">
+        <Router basename="/bottle-cap-collector-front">
           <center><h1 class="display-4"><strong>BOTTLE CAP COLLECTOR</strong></h1></center>
-        {this.renderRandomCaps()}
+          {this.renderRandomCaps()}
           {this.renderMenu()}
           <Route path='/' exact component={Home} />
           <Route path='/mobile' component={Mobile} />
