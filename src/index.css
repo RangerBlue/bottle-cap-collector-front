@@ -115,3 +115,15 @@ code {
   background-color:#4f3a07 !important;
   border-color: #4f3a07 !important;
 }
+
+#footer{
+  border-color:  #4f3a07;
+  background-color:#4f3a07;
+  color: white;
+  text-align: center;
+  text-decoration:none;
+}
+
+#footer a{
+  color: inherit; 
+}

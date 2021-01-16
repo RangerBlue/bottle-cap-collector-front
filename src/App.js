@@ -7,6 +7,8 @@ import API from './pages/api.js'
 import Catalog from './pages/catalog.js'
 import Home from './pages/home.js'
 import Mobile from './pages/mobile.js'
+import Pictures from './pages/pictures';
+import { Card } from 'react-bootstrap'
 
 class App extends Component {
   constructor() {
@@ -40,6 +42,7 @@ class App extends Component {
 
   componentDidMount() {
     const now = new Date()
+    console.log(now)
     if (!((now.getHours >= 0 && now.getMinutes >= 15) && (now.getHours < 7))) {
       fetch('https://bottlecapcollector.herokuapp.com/catalog/')
         .then(res => res.json())
@@ -123,6 +126,9 @@ class App extends Component {
         <NavLink to='/catalog' style={{ padding: 20 }} activeClassName="active">
           CATALOG
       </NavLink>
+        <NavLink to='/album' style={{ padding: 20 }} activeClassName="active">
+          ALBUM
+      </NavLink>
       </nav>
     );
   }
@@ -138,7 +144,14 @@ class App extends Component {
           <Route path='/mobile' component={Mobile} />
           <Route path='/api' component={API} />
           <Route path='/catalog' component={() => <Catalog caps={this.state.cap} />} />
+          <Route path='/album' component={Pictures} />
+          <Card>
+            <Card.Header id="footer">
+              <a href="https://www.linkedin.com/in/kamil-machul/" target="_blank">&#169;MACHWARE KAMIL MACHUL 2021</a>
+            </Card.Header>
+          </Card>
         </Router>
+
       ];
     } else {
       return (
