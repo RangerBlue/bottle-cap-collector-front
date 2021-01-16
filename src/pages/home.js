@@ -8,13 +8,14 @@ const Home = () => {
     const linkDesc = <div>React frontend application repository</div>
     const pageContent =
         <div>
-            Welcome to <i>Bottle Cap Collector!</i> The page you are browsing now is written in React. Diagram below shows
-            structure of the system and its components and how they are communicating. In the Mobile section you can find
-            demonstration of Android mobile application. API section contains information about backend created in Spring Boot.
-            Catalog presents all caps which I have collected so far, you can filter them out and click of the one you are
-            interested in to see more details. In the footer you can find link to GitHub repository of given application.
-            The system was created to fulfill personal needs - maintain big collection of bootle caps and to be playground
-            for learning new technologies and obtaining certification.
+            Welcome to <i>Bottle Cap Collector!</i> The page you are seeing now is written in React. Below you can 
+            find a diagram that shows the structure of the system and its components, with relations between them. 
+            In the Mobile section, you can see a demonstration of the Android mobile application. The API section 
+            contains information about backend created in Spring Boot. The Catalog presents all caps, which I have 
+            collected so far, you can filter them out or click on the one you are interested in to see more details. 
+            In the footer, you can find a link to the GitHub repository of the application. The system was created 
+            to fulfill personal needs – to maintain a big collection of bottle caps and to be a playground for 
+            learning new technologies and obtaining certification.
         </div>
     const pageContentTittle = <div>BOTTLE CAP COLLECTOR PROJECT</div>
 

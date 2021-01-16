@@ -33,8 +33,8 @@ function Mobile() {
     const linkNoAdmin = "https://drive.google.com/file/d/1piIamlfwRR1p4VLg4GU28SsKhgJIAhXi/preview";
     const noAdminText =
         <div>
-            As an admin user, you are allowed to perform updates, additions, deletions and views. Without the account,
-            you are restricted to only view the functionalities – you cannot alter the bottle cap collection.
+            As an admin user, you are allowed to perform updates, additions and deletions. Without the account, you are restricted 
+            to only view the functionalities – you cannot alter the bottle cap collection.
         </div>
 
     const linkNoInternet = "https://drive.google.com/file/d/1fHmVHqxU--L27tNloqkYv6Q7_no3ZSA9/preview";
@@ -65,9 +65,9 @@ function Mobile() {
     const mobileTittle = "Android";
     const mobileDescprition =
         <div>
-            Mobile application was built for Android System. It is communicating with backend via REST API. This app is
-            an entry point for maintaining content of the cap collection. User should use it to capture picture of bottle
-            caps. Target version of the project is 28. Two libraries were used during development:
+            Mobile application was built for Android System. It communicates with backend via REST API. This app is an entry 
+            point for maintaining content of the cap collection. A user should use it to capture pictures of bottle caps. 
+            A target version of the project is <i>28</i>. There were two libraries used during development:
             <ul>
                 <li>Retrofit - HTTP client for Android,</li>
                 <li>Picasso - displaying images.</li>

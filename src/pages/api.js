@@ -13,9 +13,9 @@ function API() {
 
     const apiContent =
         <div>
-            Backend API was build in Spring Boot. It is communicating with database through Spring Data JPA and
-            it is accessible via REST API for mobile application and website. OpenCV library was used for image
-            processing. Application is deployed to Heroku cloud platform.
+            The backend API was built in Spring Boot. It communicates with database through Spring 
+            Data JPA and it is accessible via REST API for mobile application and website. OpenCV 
+            library was used for image processing. Application is deployed to Heroku cloud platform.
         </div>
     const apiTittle = <div>Spring Boot</div>
 
@@ -71,23 +71,23 @@ function API() {
     const securityTittle = "Spring Boot Security"
     const securityContent =
         <div>
-            Application secures its sensitive endpoints. At this moment it supports only <i>ADMIN</i> role -
-            only role which allow to alter application database content.
+            The application secures its sensitive endpoints. At this moment, it supports only  <i>ADMIN</i> 
+            role - – the role that allows you to alter application database content.
         </div>
 
     const opencvTittle = "OpenCV 3.4.2"
     const opencvContent =
         <div>
-            OpenCV was used in order to calculating images histograms, which is core of similarity recognition
-            in system. Comparision can be performed against 4 methods:
+            OpenCV was used in order to calculate images histograms, which is a core of similarity recognition in the system. 
+            Comparison can be performed with 4 methods:
             <ul>
                 <li>Correlation</li>
                 <li>Chi-Square</li>
                 <li>Intersection</li>
                 <li>Bhattacharyya</li>
             </ul>
-            Combined results of results adapted for creation of applicatio <i>similarity model</i> - entity which
-            presents how similarity of given cap is distributed. For example :
+            Combined results of each method were adapted to create the application  <i>similarity model</i>. It is an entity presenting 
+            the similarity distribution of a given cap, basing on the given bottle cap collection. For example:
             <pre>
                 "similarityDistribution": <br />
                 [
@@ -103,32 +103,34 @@ function API() {
                     0
                 ],
             </pre>
+            Value at index <i>n</i> means how many caps has similarity between <i>(0+10*n)%</i> and <i>(10+10*n)%</i>. In given example
+            11 caps has similarity on level <i>70-80%</i>.
         </div>
 
     const herokuTittle = "Heroku Cloud Platform"
     const herokuContent =
         <div>
-            Application was deployed to Heroku, the reason why it is not accessible bewtween certain hours is that free tier
-            was selected and it offers only limited amount of hours per months. Second disadventage is turning application to
-            idle state after few minutes of not using it. That is why <a href={"https://cron-job.org/"} target="_blank">
-                https://cron-job.org/</a> was utilized to constantly ping application and prevent it for sleeping.
+           The application was deployed to Heroku free tier, so this is the reason why the application is not accessible between certain 
+           hours (Heroku free tier offers only limited number of hours per month). Another challenge was turning application to idle 
+           state after few minutes without usage. This is why  <a href={"https://cron-job.org/"} target="_blank">
+                https://cron-job.org/</a> was utilized to constantly ping the application and prevent it from “sleeping”.
         </div>
 
     const googleTittle = "Google Drive API"
     const googleContent =
         <div>
-            Application is integrated with GoogleDrive, it allows to easily add, remove or delete images. Google Drive also
-            has function of image storage. As Google doesn't explicitly share method to provide url to drive images we have to
-            use <i>thumbnailLink</i> field. This field contains link to image preview which is small. After removing numbers after
-            "=" sign we have access to full resolution image. <br /><br />
+            The application is integrated with GoogleDrive, which allows you to easily add, remove or delete images. Google Drive also has a 
+            function of an images storage. As Google does not explicitly share the method to provide url to drive images, I had to use  
+            <i>thumbnailLink</i> field. This field contains a link to an image preview, which is small. After removing numbers after "=" sign 
+            I got an access to full resolution image. <br /><br />
             For example:<br />
             <i>https://lh3.googleusercontent.com/Sy4NmhN1dNSVjOLB2gbixc85ZfVc_VklhMKKB6k49Qw-hfJjbJSnjHaXTnJGkj_c4<b>=w190</b></i> <br />
             After:<br />
             <i>https://lh3.googleusercontent.com/Sy4NmhN1dNSVjOLB2gbixc85ZfVc_VklhMKKB6k49Qw-hfJjbJSnjHaXTnJGkj_c4</i> <br /><br />
-            Deleted numbers at the end stand for amount of pixels which returned image should contain. Provided amount of pixels
-            allows to decide how big image we want - which was very usefull for optimization purposes. The fact that it always return
-            square image when we provide pixels part doesn't matter as caps are circles. The second disadventage is the link
-            change after approximately 1 hour. That is why application must refreshes links several times at day.
+            Deleted numbers at the end stand for a number of pixels which the returned image should consist of. It was very useful for 
+            optimization process – I could decide how big image I want to show just by changing numbers. The fact that it always returns a 
+            square image does not matter as caps are circles (also symmetrical figures). Another challenge here was the link changing after 
+            approximately 1 hour. This is why the application must refresh links several times a day.
         </div>
 
     return (

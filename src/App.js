@@ -8,6 +8,7 @@ import Catalog from './pages/catalog.js'
 import Home from './pages/home.js'
 import Mobile from './pages/mobile.js'
 import Pictures from './pages/pictures';
+import namepicture from './pictures/name.png';
 import { Card } from 'react-bootstrap'
 
 class App extends Component {
@@ -42,8 +43,7 @@ class App extends Component {
 
   componentDidMount() {
     const now = new Date()
-    console.log(now)
-    if (!((now.getHours >= 0 && now.getMinutes >= 15) && (now.getHours < 7))) {
+    if (!(((now.getHours() == 0 && now.getMinutes() >= 30) || (now.getHours() > 0)) && (now.getHours() < 7))) {
       fetch('https://bottlecapcollector.herokuapp.com/catalog/')
         .then(res => res.json())
         .then((data) => {
@@ -137,7 +137,10 @@ class App extends Component {
     if (this.state.loaded) {
       return [
         <Router basename="/bottle-cap-collector-front">
-          <center><h1 class="display-4"><strong>BOTTLE CAP COLLECTOR</strong></h1></center>
+          <div class="container">
+            <img src={namepicture} class="img-fluid" id="name-logo"></img>
+          </div>
+          
           {this.renderRandomCaps()}
           {this.renderMenu()}
           <Route path='/' exact component={Home} />
