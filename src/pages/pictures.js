@@ -6,29 +6,32 @@ import { Carousel } from 'react-bootstrap'
 
 const Pictures = () => {
     return (
-        <Carousel>
-            <Carousel.Item interval={2000}>
-                <img
-                    className="d-block w-100"
-                    src={picture1}
-                    alt="First slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item interval={2000}>
-                <img
-                    className="d-block w-100"
-                    src={picture2}
-                    alt="Second slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item interval={2000}>
-                <img
-                    className="d-block w-100"
-                    src={picture3}
-                    alt="Third slide"
-                />
-            </Carousel.Item>
-        </Carousel>
+        <div class="container">
+            <Carousel>
+                <Carousel.Item interval={2000}>
+                    <img
+                        className="d-block w-100"
+                        src={picture1}
+                        alt="First slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={2000}>
+                    <img
+                        className="d-block w-100"
+                        src={picture2}
+                        alt="Second slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={2000}>
+                    <img
+                        className="d-block w-100"
+                        src={picture3}
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+            </Carousel>
+        </div>
+
     )
 }
 
