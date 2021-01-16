@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c9dfbf92c06a7327d15d48e0eb0df9a",
+    "revision": "c7f8eb9f8316b43ea467714dcd38828f",
     "url": "/bottle-cap-collector-front/index.html"
   },
   {
-    "revision": "4871bd54975d3bea0738",
-    "url": "/bottle-cap-collector-front/static/css/main.e315f005.chunk.css"
+    "revision": "e24223ee3a5b5632bd29",
+    "url": "/bottle-cap-collector-front/static/css/main.af5e82f1.chunk.css"
   },
   {
-    "revision": "996073b4f93a31c23b55",
-    "url": "/bottle-cap-collector-front/static/js/2.bcaf258b.chunk.js"
+    "revision": "8c608fa48295be0fc1e7",
+    "url": "/bottle-cap-collector-front/static/js/2.6d1cebfa.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/bottle-cap-collector-front/static/js/2.bcaf258b.chunk.js.LICENSE.txt"
+    "url": "/bottle-cap-collector-front/static/js/2.6d1cebfa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4871bd54975d3bea0738",
-    "url": "/bottle-cap-collector-front/static/js/main.70c0cf65.chunk.js"
+    "revision": "e24223ee3a5b5632bd29",
+    "url": "/bottle-cap-collector-front/static/js/main.578da41a.chunk.js"
   },
   {
     "revision": "1afe6c5591e07eb3685c",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bottle-cap-collector-front/static/media/catalogresponse.6e1586d9.png"
   },
   {
-    "revision": "985255661416f040dade92e8430bdbd1",
-    "url": "/bottle-cap-collector-front/static/media/diagram.98525566.png"
+    "revision": "d49a32226be00f6846bc03be26a57e77",
+    "url": "/bottle-cap-collector-front/static/media/diagram.d49a3222.png"
   },
   {
     "revision": "4a934e5dddabbc7ffcc981decd8d5f2f",

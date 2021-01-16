@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bottle-cap-collector-front/precache-manifest.3a1deacf074045ae5636bcae89dad48f.js"
+  "/bottle-cap-collector-front/precache-manifest.7fa8a2f8a76e396ac7b670f6e5760f4f.js"
 );
 
 self.addEventListener('message', (event) => {
