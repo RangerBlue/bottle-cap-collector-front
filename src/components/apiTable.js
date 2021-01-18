@@ -36,11 +36,11 @@ const ApiTable = (props) => {
                     </tr>
                     <tr>
                         <th scope="row"></th>
-                        <td colspan="2"><img src={props.request} class="img-fluid"></img></td>
+                        <td colspan="2"><img src={props.request} class="img-fluid" alt="request"></img></td>
                     </tr>
                     <tr>
                         <th scope="row"></th>
-                        <td colspan="2"> <img src={props.response} class="img-fluid"></img></td>
+                        <td colspan="2"> <img src={props.response} class="img-fluid" alt="response"></img></td>
                     </tr>
                 </tbody>
             </table>

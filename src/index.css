@@ -99,12 +99,18 @@ code {
   color : white;
 }
 
+#download-button {
+  background-color:#4f3a07;
+  border-color:#4f3a07 ;
+  color : white;
+}
+
 .display-4 {
   background-color: #f0e7d1;
 }
 
 #button-desc{
-  padding-left: 15px;
+  padding-left: 5px;
 }
 
 #input-filter-body{

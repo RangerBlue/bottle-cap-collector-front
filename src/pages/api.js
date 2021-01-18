@@ -112,7 +112,7 @@ function API() {
         <div>
            The application was deployed to Heroku free tier, so this is the reason why the application is not accessible between certain 
            hours (Heroku free tier offers only limited number of hours per month). Another challenge was turning application to idle 
-           state after few minutes without usage. This is why  <a href={"https://cron-job.org/"} target="_blank">
+           state after few minutes without usage. This is why  <a href={"https://cron-job.org/"} target="_blank" rel="noopener noreferrer">
                 https://cron-job.org/</a> was utilized to constantly ping the application and prevent it from “sleeping”.
         </div>
 

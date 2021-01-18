@@ -24,7 +24,7 @@ const Home = () => {
         <div class="container">
             <TextSection text={pageContent}
                 tittle={pageContentTittle} />
-            <img src={diagram} class="img-fluid"></img>
+            <img src={diagram} class="img-fluid" alt="diagram"></img>
             <FooterLink link={frontEndGithubLink} desc={linkDesc}></FooterLink>
         </div>
     )

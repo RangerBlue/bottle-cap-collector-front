@@ -25,10 +25,6 @@ class App extends Component {
     windowWidth: window.innerWidth
   }
 
-  componentDidMount() {
-    this.update();
-  }
-
   update = () => {
     this.setState({
       windowWidth: window.innerWidth
@@ -42,8 +38,9 @@ class App extends Component {
   };
 
   componentDidMount() {
+    this.update()
     const now = new Date()
-    if (!(((now.getHours() == 0 && now.getMinutes() >= 30) || (now.getHours() > 0)) && (now.getHours() < 7))) {
+    if (!(((now.getHours() === 0 && now.getMinutes() >= 30) || (now.getHours() > 0)) && (now.getHours() < 7))) {
       fetch('https://bottlecapcollector.herokuapp.com/catalog/')
         .then(res => res.json())
         .then((data) => {
@@ -105,7 +102,7 @@ class App extends Component {
   renderLogo = (text) => {
     return (
       <div class="loading">
-        <img src={logo} height={200} width={200} class="rotateLogo"></img>
+        <img src={logo} height={200} width={200} class="rotateLogo" alt="loading_logo"></img>
         <div class="textLogo">{text}</div>
       </div>
     );
@@ -138,7 +135,7 @@ class App extends Component {
       return [
         <Router basename="/bottle-cap-collector-front">
           <div class="container">
-            <img src={namepicture} class="img-fluid" id="name-logo"></img>
+            <img src={namepicture} class="img-fluid" id="name-logo" alt="image_logo"></img>
           </div>
           
           {this.renderRandomCaps()}
@@ -150,7 +147,8 @@ class App extends Component {
           <Route path='/album' component={Pictures} />
           <Card>
             <Card.Header id="footer">
-              <a href="https://www.linkedin.com/in/kamil-machul/" target="_blank">&#169;MACHWARE KAMIL MACHUL 2021</a>
+              <a href="https://www.linkedin.com/in/kamil-machul/" target="_blank" rel="noopener noreferrer" >
+                &#169;MACHWARE KAMIL MACHUL 2021</a>
             </Card.Header>
           </Card>
         </Router>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import {Modal} from 'react-bootstrap'
 
 const CapComponent = (props) => {
   return (
@@ -18,7 +18,7 @@ const CapComponent = (props) => {
       <Modal.Body >
         <p>
           <div class="float-left">
-            <img src={props.capURL + "=w400"} height={400} width={400} class="img-fluid" ></img>
+            <img src={props.capURL + "=w400"} height={400} width={400} class="img-fluid" alt="cap_image" ></img>
           </div>
 
           <div class="text-justify">
