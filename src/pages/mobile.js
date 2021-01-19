@@ -59,9 +59,19 @@ function Mobile() {
             Messenger, Instagram or any usual way you like, or save it on your Google Drive.
         </div>
 
+    const linkSettings = "https://drive.google.com/file/d/1rzGqftQGJXAROcMCtGH7rifvFaVcpGGZ/preview";
+    const settingsText =
+        <div>
+            If an image you have just taken does not look correctly and it seems to be rotated you should switch on 
+            the <i>rotate image</i> option. It allows application to rotate picture to position as it has been seen in the preview.
+            On different devices the orientation of a captured picture is stored in a different way - to access it we must save 
+            the picture first and read tags with <i>ExifInterface </i> class. As no image is saved in the device storage in the 
+            application, we must deal with it manually.
+        </div>    
+
     const githubLinkMobile = "https://github.com/RangerBlue/mBottleCapCollector"
     const desc = "Android mobile application repository"
-    const downloadLink = "https://drive.google.com/file/d/1zaaLkqR0wwYVBdZmRVh-jz5lXzUPWO8x/view?usp=sharing"
+    const downloadLink = "https://drive.google.com/file/d/1sFWvBFz8N2KjqK-XCCxseqVd56ooSgsO/view?usp=sharing"
 
     const mobileTittle = "Android";
     const mobileDescprition =
@@ -97,6 +107,9 @@ function Mobile() {
                     <NavLink to='/mobile/outofwork' style={{ padding: 20 }} activeClassName="active">
                         OUT OF WORK
                     </NavLink>
+                    <NavLink to='/mobile/settings' style={{ padding: 20 }} activeClassName="active">
+                        SETTINGS
+                    </NavLink>
                 </nav>
                 <Route path='/mobile/check' component={() => <VideoCard link={linkCheckCap} content={checkCapText} />} />
                 <Route path='/mobile/whatcapyouare' component={() => <VideoCard link={linkWhatCapYouAre} content={whatCapYouAreText} />} />
@@ -104,6 +117,7 @@ function Mobile() {
                 <Route path='/mobile/account' component={() => <VideoCard link={linkNoAdmin} content={noAdminText} />} />
                 <Route path='/mobile/internet' component={() => <VideoCard link={linkNoInternet} content={noInterentText} />} />
                 <Route path='/mobile/outofwork' component={() => <VideoCard link={linkOutOfWork} content={outOfWorkText} />} />
+                <Route path='/mobile/settings' component={() => <VideoCard link={linkSettings} content={settingsText} />} />
             </Router>
             {showMainContent ? <TextSection text={mobileDescprition}
                 tittle={mobileTittle} /> : null}
