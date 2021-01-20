@@ -71,7 +71,7 @@ function Mobile() {
 
     const githubLinkMobile = "https://github.com/RangerBlue/mBottleCapCollector"
     const desc = "Android mobile application repository"
-    const downloadLink = "https://drive.google.com/file/d/1sFWvBFz8N2KjqK-XCCxseqVd56ooSgsO/view?usp=sharing"
+    const downloadLink = "https://drive.google.com/file/d/1-GzXSTM7zbsKzJ_J6UnlxcDv944FlDQD/view?usp=sharing"
 
     const mobileTittle = "Android";
     const mobileDescprition =

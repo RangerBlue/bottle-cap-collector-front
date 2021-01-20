@@ -71,8 +71,8 @@ function API() {
     const securityTittle = "Spring Boot Security"
     const securityContent =
         <div>
-            The application secures its sensitive endpoints. At this moment, it supports only  <i>ADMIN</i> 
-            role - – the role that allows you to alter application database content.
+            The application secures its sensitive endpoints. At this moment, it supports 
+            only <i>ADMIN</i> role - the role that allows you to alter application database content.
         </div>
 
     const opencvTittle = "OpenCV 3.4.2"
