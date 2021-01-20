@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bottle-cap-collector-front/static/css/main.d54fa538.chunk.css",
-    "main.js": "/bottle-cap-collector-front/static/js/main.47027aba.chunk.js",
-    "main.js.map": "/bottle-cap-collector-front/static/js/main.47027aba.chunk.js.map",
+    "main.js": "/bottle-cap-collector-front/static/js/main.bea7f481.chunk.js",
+    "main.js.map": "/bottle-cap-collector-front/static/js/main.bea7f481.chunk.js.map",
     "runtime-main.js": "/bottle-cap-collector-front/static/js/runtime-main.565a8f81.js",
     "runtime-main.js.map": "/bottle-cap-collector-front/static/js/runtime-main.565a8f81.js.map",
     "static/js/2.6d1cebfa.chunk.js": "/bottle-cap-collector-front/static/js/2.6d1cebfa.chunk.js",
     "static/js/2.6d1cebfa.chunk.js.map": "/bottle-cap-collector-front/static/js/2.6d1cebfa.chunk.js.map",
     "index.html": "/bottle-cap-collector-front/index.html",
-    "precache-manifest.72a41223d88753def9810e9a3cb02bdd.js": "/bottle-cap-collector-front/precache-manifest.72a41223d88753def9810e9a3cb02bdd.js",
+    "precache-manifest.7bde93b78fa856dca407c554f8d12e10.js": "/bottle-cap-collector-front/precache-manifest.7bde93b78fa856dca407c554f8d12e10.js",
     "service-worker.js": "/bottle-cap-collector-front/service-worker.js",
     "static/css/main.d54fa538.chunk.css.map": "/bottle-cap-collector-front/static/css/main.d54fa538.chunk.css.map",
     "static/js/2.6d1cebfa.chunk.js.LICENSE.txt": "/bottle-cap-collector-front/static/js/2.6d1cebfa.chunk.js.LICENSE.txt",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.565a8f81.js",
     "static/js/2.6d1cebfa.chunk.js",
     "static/css/main.d54fa538.chunk.css",
-    "static/js/main.47027aba.chunk.js"
+    "static/js/main.bea7f481.chunk.js"
   ]
 }
