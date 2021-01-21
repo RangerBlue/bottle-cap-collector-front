@@ -21,7 +21,7 @@ function Mobile() {
             name (most likely the beverage brand) and a description with some additional information.
         </div>
 
-    const linkGallery = "https://drive.google.com/file/d/1i48-yNF8bUzClNdhz6lawkHexyiYVW_n/preview";
+    const linkGallery = "https://drive.google.com/file/d/1uVvcESMxcXpTO7o4zzYBqYCh5H_woESk/preview";
     const gallertText =
         <div>
             You can always see your whole caps collection under the <i>Gallery</i>. Put your bottle caps in a descending
@@ -71,7 +71,7 @@ function Mobile() {
 
     const githubLinkMobile = "https://github.com/RangerBlue/mBottleCapCollector"
     const desc = "Android mobile application repository"
-    const downloadLink = "https://drive.google.com/file/d/1-GzXSTM7zbsKzJ_J6UnlxcDv944FlDQD/view?usp=sharing"
+    const downloadLink = "https://drive.google.com/file/d/1UweNm-alRKqwnEGysytkqmkiFrhIyFzG/view?usp=sharing"
 
     const mobileTittle = "Android";
     const mobileDescprition =
