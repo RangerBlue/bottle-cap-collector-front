@@ -143,7 +143,7 @@ class App extends Component {
           <Route path='/' exact component={Home} />
           <Route path='/mobile' component={Mobile} />
           <Route path='/api' component={API} />
-          <Route path='/catalog' component={() => <Catalog caps={this.state.cap} />} />
+          <Route path='/catalog' render={() => <Catalog caps={this.state.cap} />} />
           <Route path='/album' component={Pictures} />
           <Card>
             <Card.Header id="footer">
