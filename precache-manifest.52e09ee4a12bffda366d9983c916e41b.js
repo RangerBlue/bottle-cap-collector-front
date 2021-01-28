@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48e17550e67bb1eeabf4f0d6e20eb0a1",
+    "revision": "7deed99ec4747d0fe586857fd21fb25c",
     "url": "/bottle-cap-collector-front/index.html"
   },
   {
-    "revision": "613063f790689ed47db6",
+    "revision": "d3aa0858d8546d41b438",
     "url": "/bottle-cap-collector-front/static/css/main.bbfccd6e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bottle-cap-collector-front/static/js/2.baec8d66.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "613063f790689ed47db6",
-    "url": "/bottle-cap-collector-front/static/js/main.e23cc053.chunk.js"
+    "revision": "d3aa0858d8546d41b438",
+    "url": "/bottle-cap-collector-front/static/js/main.254c9e20.chunk.js"
   },
   {
     "revision": "1afe6c5591e07eb3685c",
