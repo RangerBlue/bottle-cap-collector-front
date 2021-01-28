@@ -152,13 +152,13 @@ class App extends Component {
           <Route path='/api' component={API} />
           <Route path='/catalog' render={() => <Catalog caps={this.state.cap} />} />
           <Route path='/album' component={Pictures} />
+          </AnimatedSwitch>
           <Card>
             <Card.Header id="footer">
               <a href="https://www.linkedin.com/in/kamil-machul/" target="_blank" rel="noopener noreferrer" >
                 &#169;MACHWARE KAMIL MACHUL 2021</a>
             </Card.Header>
           </Card>
-          </AnimatedSwitch>
         </Router>
       ];
     } else {
