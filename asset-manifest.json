@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bottle-cap-collector-front/static/css/main.d54fa538.chunk.css",
-    "main.js": "/bottle-cap-collector-front/static/js/main.cff91713.chunk.js",
-    "main.js.map": "/bottle-cap-collector-front/static/js/main.cff91713.chunk.js.map",
+    "main.css": "/bottle-cap-collector-front/static/css/main.bbfccd6e.chunk.css",
+    "main.js": "/bottle-cap-collector-front/static/js/main.e23cc053.chunk.js",
+    "main.js.map": "/bottle-cap-collector-front/static/js/main.e23cc053.chunk.js.map",
     "runtime-main.js": "/bottle-cap-collector-front/static/js/runtime-main.565a8f81.js",
     "runtime-main.js.map": "/bottle-cap-collector-front/static/js/runtime-main.565a8f81.js.map",
-    "static/js/2.6d1cebfa.chunk.js": "/bottle-cap-collector-front/static/js/2.6d1cebfa.chunk.js",
-    "static/js/2.6d1cebfa.chunk.js.map": "/bottle-cap-collector-front/static/js/2.6d1cebfa.chunk.js.map",
+    "static/js/2.baec8d66.chunk.js": "/bottle-cap-collector-front/static/js/2.baec8d66.chunk.js",
+    "static/js/2.baec8d66.chunk.js.map": "/bottle-cap-collector-front/static/js/2.baec8d66.chunk.js.map",
     "index.html": "/bottle-cap-collector-front/index.html",
-    "precache-manifest.203f27c95a13f7750a993da7b80e028d.js": "/bottle-cap-collector-front/precache-manifest.203f27c95a13f7750a993da7b80e028d.js",
+    "precache-manifest.13b4935414c8ae9d7c7c1ac384a471f8.js": "/bottle-cap-collector-front/precache-manifest.13b4935414c8ae9d7c7c1ac384a471f8.js",
     "service-worker.js": "/bottle-cap-collector-front/service-worker.js",
-    "static/css/main.d54fa538.chunk.css.map": "/bottle-cap-collector-front/static/css/main.d54fa538.chunk.css.map",
-    "static/js/2.6d1cebfa.chunk.js.LICENSE.txt": "/bottle-cap-collector-front/static/js/2.6d1cebfa.chunk.js.LICENSE.txt",
+    "static/css/main.bbfccd6e.chunk.css.map": "/bottle-cap-collector-front/static/css/main.bbfccd6e.chunk.css.map",
+    "static/js/2.baec8d66.chunk.js.LICENSE.txt": "/bottle-cap-collector-front/static/js/2.baec8d66.chunk.js.LICENSE.txt",
     "static/media/album1.jpg": "/bottle-cap-collector-front/static/media/album1.f4174384.jpg",
     "static/media/album2.jpg": "/bottle-cap-collector-front/static/media/album2.37c50b01.jpg",
     "static/media/album3.jpg": "/bottle-cap-collector-front/static/media/album3.efdb4f50.jpg",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.565a8f81.js",
-    "static/js/2.6d1cebfa.chunk.js",
-    "static/css/main.d54fa538.chunk.css",
-    "static/js/main.cff91713.chunk.js"
+    "static/js/2.baec8d66.chunk.js",
+    "static/css/main.bbfccd6e.chunk.css",
+    "static/js/main.e23cc053.chunk.js"
   ]
 }
