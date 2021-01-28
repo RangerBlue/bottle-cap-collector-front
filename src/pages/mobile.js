@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom"
 import FooterLink from "../components/footerLink";
 import { useState } from "react"
 import TextSection from "../components/textSection"
+import { AnimatedSwitch } from 'react-router-transition';
 
 function Mobile() {
     const [showMainContent, setShowMainContent] = useState([])
@@ -111,13 +112,19 @@ function Mobile() {
                         SETTINGS
                     </NavLink>
                 </nav>
-                <Route path='/mobile/check' component={() => <VideoCard link={linkCheckCap} content={checkCapText} />} />
-                <Route path='/mobile/whatcapyouare' component={() => <VideoCard link={linkWhatCapYouAre} content={whatCapYouAreText} />} />
-                <Route path='/mobile/gallery' component={() => <VideoCard link={linkGallery} content={gallertText} />} />
-                <Route path='/mobile/account' component={() => <VideoCard link={linkNoAdmin} content={noAdminText} />} />
-                <Route path='/mobile/internet' component={() => <VideoCard link={linkNoInternet} content={noInterentText} />} />
-                <Route path='/mobile/outofwork' component={() => <VideoCard link={linkOutOfWork} content={outOfWorkText} />} />
-                <Route path='/mobile/settings' component={() => <VideoCard link={linkSettings} content={settingsText} />} />
+                <AnimatedSwitch
+                    atEnter={{ opacity: 0 }}
+                    atLeave={{ opacity: 1 }}
+                    atActive={{ opacity: 1 }}
+                    className="switch-wrapper">
+                    <Route path='/mobile/check' component={() => <VideoCard link={linkCheckCap} content={checkCapText} />} />
+                    <Route path='/mobile/whatcapyouare' component={() => <VideoCard link={linkWhatCapYouAre} content={whatCapYouAreText} />} />
+                    <Route path='/mobile/gallery' component={() => <VideoCard link={linkGallery} content={gallertText} />} />
+                    <Route path='/mobile/account' component={() => <VideoCard link={linkNoAdmin} content={noAdminText} />} />
+                    <Route path='/mobile/internet' component={() => <VideoCard link={linkNoInternet} content={noInterentText} />} />
+                    <Route path='/mobile/outofwork' component={() => <VideoCard link={linkOutOfWork} content={outOfWorkText} />} />
+                    <Route path='/mobile/settings' component={() => <VideoCard link={linkSettings} content={settingsText} />} />
+                </AnimatedSwitch>
             </Router>
             {showMainContent ? <TextSection text={mobileDescprition}
                 tittle={mobileTittle} /> : null}

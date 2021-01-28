@@ -139,3 +139,7 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+
+.switch-wrapper {
+  position: relative;
+}

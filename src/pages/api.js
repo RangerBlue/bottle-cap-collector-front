@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom"
 import { useState } from "react";
 import APISection from "../components/apiSection";
 import DataModel from "../components/datamodel";
+import { AnimatedSwitch } from 'react-router-transition';
 
 function API() {
     const [showMainContent, setShowMainContent] = useState([])
@@ -156,12 +157,19 @@ function API() {
                         GOOGLE DRIVE
                     </NavLink>
                 </nav>
-                <Route path='/api/endpoints' component={() => <APISection />} />
-                <Route path='/api/datamodel' component={() => <TextSection tittle={datamodelTittle} text={datamodelContent} />} />
-                <Route path='/api/security' component={() => <TextSection tittle={securityTittle} text={securityContent} />} />
-                <Route path='/api/opencv' component={() => <TextSection tittle={opencvTittle} text={opencvContent} />} />
-                <Route path='/api/heroku' component={() => <TextSection tittle={herokuTittle} text={herokuContent} />} />
-                <Route path='/api/googledrive' component={() => <TextSection tittle={googleTittle} text={googleContent} />} />
+                <AnimatedSwitch
+                    atEnter={{ opacity: 0 }}
+                    atLeave={{ opacity: 1 }}
+                    atActive={{ opacity: 1 }}
+                    transitionAppear={true}
+                    className="switch-wrapper">
+                    <Route path='/api/endpoints' component={() => <APISection />} />
+                    <Route path='/api/datamodel' component={() => <TextSection tittle={datamodelTittle} text={datamodelContent} />} />
+                    <Route path='/api/security' component={() => <TextSection tittle={securityTittle} text={securityContent} />} />
+                    <Route path='/api/opencv' component={() => <TextSection tittle={opencvTittle} text={opencvContent} />} />
+                    <Route path='/api/heroku' component={() => <TextSection tittle={herokuTittle} text={herokuContent} />} />
+                    <Route path='/api/googledrive' component={() => <TextSection tittle={googleTittle} text={googleContent} />} />
+                </AnimatedSwitch>
             </Router>
             {showMainContent ? <TextSection text={apiContent}
                 tittle={apiTittle} /> : null}

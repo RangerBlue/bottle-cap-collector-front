@@ -10,6 +10,7 @@ import Mobile from './pages/mobile.js'
 import Pictures from './pages/pictures';
 import namepicture from './pictures/name.png';
 import { Card } from 'react-bootstrap'
+import { AnimatedSwitch } from 'react-router-transition';
 
 class App extends Component {
   constructor() {
@@ -140,6 +141,12 @@ class App extends Component {
           
           {this.renderRandomCaps()}
           {this.renderMenu()}
+          <AnimatedSwitch
+            atEnter={{ opacity: 0 }}
+            atLeave={{ opacity: 1 }}
+            atActive={{ opacity: 1 }}
+            className="switch-wrapper"
+          >
           <Route path='/' exact component={Home} />
           <Route path='/mobile' component={Mobile} />
           <Route path='/api' component={API} />
@@ -151,8 +158,8 @@ class App extends Component {
                 &#169;MACHWARE KAMIL MACHUL 2021</a>
             </Card.Header>
           </Card>
+          </AnimatedSwitch>
         </Router>
-
       ];
     } else {
       return (
