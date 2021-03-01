@@ -3,7 +3,7 @@ import TextSection from "../components/textSection"
 import FooterLink from "../components/footerLink";
 import diagram from '../pictures/diagram.png';
 
-const Home = () => {
+const Home = ({totalAmount}) => {
     const frontEndGithubLink = "https://github.com/RangerBlue/bottle-cap-collector-front"
     const linkDesc = <div>React frontend application repository</div>
     const pageContent =
@@ -16,6 +16,9 @@ const Home = () => {
             In the footer, you can find a link to the GitHub repository of the application. The system was created 
             to fulfill personal needs – to maintain a big collection of bottle caps and to be a playground for 
             learning new technologies and obtaining certification.
+            <br></br>
+            <br></br>
+            At this moment the collection contains <b>{totalAmount}</b> bottle caps.
         </div>
     const pageContentTittle = <div>BOTTLE CAP COLLECTOR PROJECT</div>
 
