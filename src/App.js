@@ -42,7 +42,7 @@ class App extends Component {
     this.update()
     const now = new Date()
     if (!(((now.getHours() === 0 && now.getMinutes() >= 30) || (now.getHours() > 0)) && (now.getHours() < 7))) {
-      fetch('https://bottlecapcollector.herokuapp.com/catalog/')
+      fetch('http://130.162.231.246:8080/catalog/')
         .then(res => res.json())
         .then((data) => {
           let length = data.length;

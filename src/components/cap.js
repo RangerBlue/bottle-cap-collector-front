@@ -3,7 +3,7 @@ import React from 'react'
 class Cap extends React.Component {
   state = { cap: [] }
   componentDidMount() {
-    fetch('https://bottlecapcollector.herokuapp.com/caps/' + this.props.id)
+    fetch('http://130.162.231.246:8080/caps/' + this.props.id)
       .then(res => res.json())
       .then((data) => {
         this.setState({ cap: data })
