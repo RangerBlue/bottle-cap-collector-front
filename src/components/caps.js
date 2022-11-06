@@ -7,7 +7,7 @@ const Caps = ({ caps }) => {
   const [modalShow, setModalShow] = useState(false);
 
   const fetchData = (capID) => {
-    fetch('http://130.162.231.246:8080/caps/' + capID)
+    fetch('https://130.162.231.246:8080/caps/' + capID)
       .then(res => res.json())
       .then((data) => {
         setLoadedCap(data)
