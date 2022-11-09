@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bottle-cap-collector-front/static/css/main.290dd9dd.css",
-    "main.js": "/bottle-cap-collector-front/static/js/main.1d3a1324.js",
+    "main.js": "/bottle-cap-collector-front/static/js/main.8cc0a339.js",
     "static/media/album3.jpg": "/bottle-cap-collector-front/static/media/album3.56f9f83c52159cb313d0.jpg",
     "static/media/album2.jpg": "/bottle-cap-collector-front/static/media/album2.3a5857dfd70b7ac7ba0d.jpg",
     "static/media/album1.jpg": "/bottle-cap-collector-front/static/media/album1.e850bc90db38df23497e.jpg",
@@ -16,10 +16,10 @@
     "static/media/getcapresponse.png": "/bottle-cap-collector-front/static/media/getcapresponse.0cd1cff2c0923769b224.png",
     "index.html": "/bottle-cap-collector-front/index.html",
     "main.290dd9dd.css.map": "/bottle-cap-collector-front/static/css/main.290dd9dd.css.map",
-    "main.1d3a1324.js.map": "/bottle-cap-collector-front/static/js/main.1d3a1324.js.map"
+    "main.8cc0a339.js.map": "/bottle-cap-collector-front/static/js/main.8cc0a339.js.map"
   },
   "entrypoints": [
     "static/css/main.290dd9dd.css",
-    "static/js/main.1d3a1324.js"
+    "static/js/main.8cc0a339.js"
   ]
 }
