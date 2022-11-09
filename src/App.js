@@ -42,7 +42,7 @@ class App extends Component {
     this.update()
     const now = new Date()
     if (!(((now.getHours() === 0 && now.getMinutes() >= 30) || (now.getHours() > 0)) && (now.getHours() < 7))) {
-      fetch('https://130.162.231.246:8080/catalog/')
+      fetch('https://130.162.231.246:8080/caps/')
         .then(res => res.json())
         .then((data) => {
           let length = data.length;
@@ -156,7 +156,7 @@ class App extends Component {
           <Card>
             <Card.Header id="footer">
               <a href="https://www.linkedin.com/in/kamil-machul/" target="_blank" rel="noopener noreferrer" >
-                &#169;MACHWARE KAMIL MACHUL 2021</a>
+                &#169;MACHWARE KAMIL MACHUL {new Date().getFullYear()}</a>
             </Card.Header>
           </Card>
         </Router>

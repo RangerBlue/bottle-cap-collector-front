@@ -28,8 +28,8 @@ const Caps = ({ caps }) => {
         ))}
       </div>
       <CapComponent
-        capName={loadedCap.capName}
-        capURL={loadedCap.fileLocation}
+        capName={loadedCap.name}
+        capURL={loadedCap.url}
         capDesc={loadedCap.description}
         show={modalShow}
         onHide={() => setModalShow(false)} />
