@@ -1,25 +1,18 @@
 {
   "files": {
     "main.css": "/bottle-cap-collector-front/static/css/main.290dd9dd.css",
-    "main.js": "/bottle-cap-collector-front/static/js/main.8cc0a339.js",
+    "main.js": "/bottle-cap-collector-front/static/js/main.9a0e1004.js",
     "static/media/album3.jpg": "/bottle-cap-collector-front/static/media/album3.56f9f83c52159cb313d0.jpg",
     "static/media/album2.jpg": "/bottle-cap-collector-front/static/media/album2.3a5857dfd70b7ac7ba0d.jpg",
     "static/media/album1.jpg": "/bottle-cap-collector-front/static/media/album1.e850bc90db38df23497e.jpg",
-    "static/media/diagram.png": "/bottle-cap-collector-front/static/media/diagram.67241836dbbb29c9a358.png",
+    "static/media/diagram.png": "/bottle-cap-collector-front/static/media/diagram.f66f127fe0f4b0f9ba05.png",
     "static/media/caplogo.png": "/bottle-cap-collector-front/static/media/caplogo.03ed6a574d6245a2b91c.png",
-    "static/media/getcapsresponse.png": "/bottle-cap-collector-front/static/media/getcapsresponse.c72415bbadb5dcb9319c.png",
-    "static/media/validatecapresponse.png": "/bottle-cap-collector-front/static/media/validatecapresponse.0b422a35d69b212e457f.png",
-    "static/media/putcapresponse.png": "/bottle-cap-collector-front/static/media/putcapresponse.876a49666c6ca69274e3.png",
-    "static/media/catalogresponse.png": "/bottle-cap-collector-front/static/media/catalogresponse.a542b2cbe0a69fa86b8d.png",
-    "static/media/linksresponse.png": "/bottle-cap-collector-front/static/media/linksresponse.4e2781f4978ed8ba47c7.png",
-    "static/media/whatcapareyouresponse.png": "/bottle-cap-collector-front/static/media/whatcapareyouresponse.03cf804d895b8b438cab.png",
-    "static/media/getcapresponse.png": "/bottle-cap-collector-front/static/media/getcapresponse.0cd1cff2c0923769b224.png",
     "index.html": "/bottle-cap-collector-front/index.html",
     "main.290dd9dd.css.map": "/bottle-cap-collector-front/static/css/main.290dd9dd.css.map",
-    "main.8cc0a339.js.map": "/bottle-cap-collector-front/static/js/main.8cc0a339.js.map"
+    "main.9a0e1004.js.map": "/bottle-cap-collector-front/static/js/main.9a0e1004.js.map"
   },
   "entrypoints": [
     "static/css/main.290dd9dd.css",
-    "static/js/main.8cc0a339.js"
+    "static/js/main.9a0e1004.js"
   ]
 }
