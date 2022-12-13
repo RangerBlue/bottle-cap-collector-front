@@ -3,8 +3,6 @@ import FooterLink from "../components/footerLink";
 import TextSection from "../components/textSection"
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom"
 import { useState } from "react";
-import APISection from "../components/apiSection";
-import DataModel from "../components/datamodel";
 import { AnimatedSwitch } from 'react-router-transition';
 
 function API() {
@@ -19,55 +17,6 @@ function API() {
             library was used for image processing. Application is deployed to Heroku cloud platform.
         </div>
     const apiTittle = <div>Spring Boot</div>
-
-    const bottleCapItems = [
-        { tittle: 'CAP' },
-        { elem: 'ID, PRIMARY KEY, BIGINT' },
-        { elem: 'CAP_NAME, VARCHAR' },
-        { elem: 'COLS, INTEGER' },
-        { elem: 'CREATION_DATE, TIMESTAMP' },
-        { elem: 'DATA, BLOB' },
-        { elem: 'DESCRIPTION, VARCHAR' },
-        { elem: 'FILE_LOCATION, VARCHAR' },
-        { elem: 'GOOGLE_DRIVEID, VARCHAR' },
-        { elem: 'INTERSECTION_VALUE, DOUBLE' },
-        { elem: 'LAST_PREVIEW_LINK_UPDATE, TIMESTAMP' },
-        { elem: 'ROWS, INTEGER' }
-    ];
-    const comparisonRangeItems = [
-        { tittle: 'COMPARISON_RANGE' },
-        { elem: 'ID, PRIMARY KEY, INTEGER' },
-        { elem: 'MAX_VALUE, DOUBLE' },
-        { elem: 'METHOD_NAME, VARCHAR' },
-        { elem: 'MIN_VALUE, DOUBLE' },
-    ]
-
-    const usersItems = [
-        { tittle: 'USERS' },
-        { elem: 'USERNAME, PRIMARY KEY, VARCHAR' },
-        { elem: 'PASSWORD, DOUBLE' },
-        { elem: 'ENABLED, VARCHAR' }
-    ]
-
-    const authoritiesItems = [
-        { tittle: 'AUTHORITIES' },
-        { elem: 'USERNAME, FOREIGN KEY to USERS, VARCHAR' },
-        { elem: 'AUTHORITY, VARCHAR' },
-    ]
-
-    const datamodelContent =
-        <div>
-            {<DataModel items={bottleCapItems} />}
-            <br />
-            {<DataModel items={comparisonRangeItems} />}
-            <br />
-            {<DataModel items={usersItems} />}
-            <br />
-            {<DataModel items={authoritiesItems} />}
-            <br />
-            PostgreSQL was used as database, production server was launched in Heroku Cloud Platform.
-        </div>
-    const datamodelTittle = "Database model in application consists of 4 tables:"
 
     const securityTittle = "Spring Boot Security"
     const securityContent =
@@ -108,7 +57,7 @@ function API() {
             11 caps has similarity on level <i>70-80%</i>.
         </div>
 
-    const herokuTittle = "Heroku Cloud Platform"
+    const herokuTittle = "Heroku Cloud Platform [Outdated as Heroku did not support free tier anymore]"
     const herokuContent =
         <div>
            The application was deployed to Heroku free tier, so this is the reason why the application is not accessible between certain 
@@ -138,12 +87,6 @@ function API() {
         <div class="container">
             <Router basename="/bottle-cap-collector-front">
                 <nav class="navbar navbar-expand-xl justify-content-center" id="navBarMobile" onClick={() => setShowMainContent(false)}>
-                    <NavLink to='/api/endpoints' style={{ padding: 20 }} exact activeClassName="active">
-                        ENDPOINTS
-                    </NavLink>
-                    <NavLink to='/api/datamodel' style={{ padding: 20 }} activeClassName="active">
-                        DATA MODEL
-                    </NavLink>
                     <NavLink to='/api/security' style={{ padding: 20 }} activeClassName="active">
                         SECURITY
                     </NavLink>
@@ -163,8 +106,6 @@ function API() {
                     atActive={{ opacity: 1 }}
                     transitionAppear={true}
                     className="switch-wrapper">
-                    <Route path='/api/endpoints' component={() => <APISection />} />
-                    <Route path='/api/datamodel' component={() => <TextSection tittle={datamodelTittle} text={datamodelContent} />} />
                     <Route path='/api/security' component={() => <TextSection tittle={securityTittle} text={securityContent} />} />
                     <Route path='/api/opencv' component={() => <TextSection tittle={opencvTittle} text={opencvContent} />} />
                     <Route path='/api/heroku' component={() => <TextSection tittle={herokuTittle} text={herokuContent} />} />
