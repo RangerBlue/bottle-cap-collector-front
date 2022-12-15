@@ -48,6 +48,9 @@ function Mobile() {
     const outOfWorkText =
         <div>
             Backend API is not available between 00:15 and 07:00 thus application will not run during this time.
+            <div className='deprecated'>
+                <TextSection tittle={"[DEPRECATED FROM VERSION 2.0.0]"} />
+             </div>
         </div>
 
     const linkWhatCapYouAre = "https://drive.google.com/file/d/1PPRMovZQICKTpza7sfzL66dLV4T6xo1a/preview";

@@ -19,6 +19,9 @@ const Home = ({totalAmount}) => {
             <br></br>
             <br></br>
             At this moment the collection contains <b>{totalAmount}</b> bottle caps.
+            <br></br>
+            <br></br>
+            Since the end of 2022 there is 2.0.0 version available which consists of new functionalities.
         </div>
     const pageContentTittle = <div>BOTTLE CAP COLLECTOR PROJECT</div>
 

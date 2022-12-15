@@ -143,3 +143,8 @@ code {
 .switch-wrapper {
   position: relative;
 }
+
+
+.deprecated {
+  color: red;
+}
