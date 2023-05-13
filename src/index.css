@@ -148,3 +148,28 @@ code {
 .deprecated {
   color: red;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-button-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #4f3a07;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  color: #4f3a07;
+  background-color: #f0e7d1;
+}

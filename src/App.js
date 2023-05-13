@@ -22,7 +22,7 @@ class App extends Component {
     cap: [],
     ids: [],
     loaded: false,
-    outsideWorkingHours: "",
+    total: 0,
     windowWidth: window.innerWidth
   }
 
@@ -40,26 +40,28 @@ class App extends Component {
 
   componentDidMount() {
     this.update()
-    const now = new Date()
-    if (!(((now.getHours() === 0 && now.getMinutes() >= 30) || (now.getHours() > 0)) && (now.getHours() < 7))) {
-      fetch('https://130.162.231.246:8080/caps/')
+    const number = Math.floor(Math.random() * 10) + 1;
+      fetch('https://130.162.231.246:8080/caps-page?pageNo='+number+'&pageSize=10')
         .then(res => res.json())
         .then((data) => {
           let length = data.length;
           this.setState({ cap: data });
           let item;
           for (let i = 0; i < 6; i++) {
-            item = data[Math.floor(Math.random() * length)];
+            item = data[i];
             this.addNewId(item.id);
           }
 
           this.setState({ loaded: true })
         })
         .catch(console.log)
-    }
-    else {
-      this.setState({ outsideWorkingHours: <div>App is currently outside working hours, go back at 7.00</div> })
-    }
+
+        fetch('https://130.162.231.246:8080/caps/total')
+        .then(res => res.json())
+        .then((data) => {
+          this.setState({total: data})
+        })
+        .catch(console.log)  
   }
 
   renderRandomCaps = () => {
@@ -147,10 +149,10 @@ class App extends Component {
             atActive={{ opacity: 1 }}
             className="switch-wrapper"
           >
-          <Route path='/' exact component={() => <Home totalAmount = {this.state.cap.length}/>} />
+          <Route path='/' exact component={() => <Home totalAmount = {this.state.total}/>} />
           <Route path='/mobile' component={Mobile} />
           <Route path='/api' component={API} />
-          <Route path='/catalog' render={() => <Catalog caps={this.state.cap} />} />
+          <Route path='/catalog' render={() => <Catalog/>} />
           <Route path='/album' component={Pictures} />
           </AnimatedSwitch>
           <Card>
