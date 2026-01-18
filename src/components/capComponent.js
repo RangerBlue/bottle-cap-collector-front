@@ -18,7 +18,7 @@ const CapComponent = (props) => {
       <Modal.Body >
         <p>
           <div class="float-left">
-            <img src={props.capURL + "=w400"} height={400} width={400} class="img-fluid" alt="cap_image" ></img>
+            <img src={props.capURL} height={400} width={400} class="img-fluid" alt="cap_image" ></img>
           </div>
 
           <div class="text-justify">

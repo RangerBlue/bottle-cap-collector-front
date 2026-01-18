@@ -7,7 +7,7 @@ const Caps = ({ caps }) => {
   const [modalShow, setModalShow] = useState(false);
 
   const fetchData = (capID) => {
-    fetch('https://130.162.231.246:8080/caps/' + capID)
+    fetch('https://collection-item-service-295065585824.europe-west1.run.app/caps/' + capID)
       .then(res => res.json())
       .then((data) => {
         setLoadedCap(data)
@@ -22,7 +22,7 @@ const Caps = ({ caps }) => {
       <div class="row">
         {caps.map((cap) => (
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-            <img src={cap.url + "=w95"} height={95} width={95} onClick={() => fetchData(cap.id)} 
+            <img src={cap.url} height={95} width={95} onClick={() => fetchData(cap.id)}
             alt = "cap"></img>
           </div>
         ))}

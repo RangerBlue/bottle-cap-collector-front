@@ -41,7 +41,7 @@ class App extends Component {
   componentDidMount() {
     this.update()
     const number = Math.floor(Math.random() * 10) + 1;
-      fetch('https://130.162.231.246:8080/caps-page?pageNo='+number+'&pageSize=10')
+      fetch('https://collection-item-service-295065585824.europe-west1.run.app/caps-page?pageNo='+0+'&pageSize=10')
         .then(res => res.json())
         .then((data) => {
           let length = data.length;
@@ -56,7 +56,7 @@ class App extends Component {
         })
         .catch(console.log)
 
-        fetch('https://130.162.231.246:8080/caps/total')
+        fetch('https://collection-item-service-295065585824.europe-west1.run.app/caps/total')
         .then(res => res.json())
         .then((data) => {
           this.setState({total: data})

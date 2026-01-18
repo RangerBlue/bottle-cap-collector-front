@@ -22,6 +22,21 @@ const Home = ({totalAmount}) => {
             <br></br>
             <br></br>
             Since the end of 2022 there is 2.0.0 version available which consists of new functionalities.
+            <br></br>
+            <br></br>
+            Since the start of 2026 there is 3.0.0 version where OpenCV was replaced with Vision API and Vertex API, also
+            the solution was refactored to allow collecting not only caps but any kind of items - application was moved
+            to GCP
+            <br></br>
+            <br></br>
+            You can check the new version here:{" "}
+            <a
+                href="https://collectionsapp-8e82a.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                NEW WEBSITE
+            </a>
         </div>
     const pageContentTittle = <div>BOTTLE CAP COLLECTOR PROJECT</div>
 

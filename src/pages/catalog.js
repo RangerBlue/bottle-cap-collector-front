@@ -13,7 +13,7 @@ const Catalog = () => {
     const fetchData = async () => {
       setLoading(true);
       const response = await fetch(
-        `https://130.162.231.246:8080/caps-page?pageNo=${pageNo}&pageSize=${pageSize}&searchText=${searchQuery}`
+        `https://collection-item-service-295065585824.europe-west1.run.app/caps-page?pageNo=${pageNo}&pageSize=${pageSize}&searchText=${searchQuery}`
       );
       const json = await response.json();
       setData([...data, ...json]);
